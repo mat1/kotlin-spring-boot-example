@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
 import java.util.*
 import javax.annotation.PostConstruct
-import javax.validation.Valid
-import javax.validation.constraints.NotBlank
 
 @RestController("/api/v1/")
 class BookingController(val bookingRepository: BookingRepository) {
