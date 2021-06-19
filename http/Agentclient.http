@@ -1,3 +1,5 @@
+### Create Booking
+
 POST http://localhost:8080/bookings
 Content-Type: application/json
 
@@ -5,6 +7,6 @@ Content-Type: application/json
   "name": "Test User"
 }
 
-###
+### Get Bookings
 
 GET http://localhost:8080/bookings
