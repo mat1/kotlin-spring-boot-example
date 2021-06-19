@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
 import java.util.*
 import javax.annotation.PostConstruct
+import javax.validation.Valid
+import javax.validation.constraints.NotBlank
 
 @RestController("/api/v1/")
 class BookingController(val bookingRepository: BookingRepository) {
@@ -27,6 +29,7 @@ class BookingController(val bookingRepository: BookingRepository) {
 
     @PostMapping("bookings")
     fun createBooking(@RequestBody createBooking: CreateBooking): Booking {
+        logger.info("Create booking $createBooking")
         return bookingRepository.save(Booking(uuid(), createBooking.name))
     }
 

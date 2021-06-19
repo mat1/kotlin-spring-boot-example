@@ -4,7 +4,7 @@ POST http://{{host}}:8080/bookings
 Content-Type: application/json
 
 {
-  "name": "Test User"
+  "name": "Matthias Brun"
 }
 
 ### Get Bookings
